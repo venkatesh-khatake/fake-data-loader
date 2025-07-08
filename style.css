@@ -19,6 +19,9 @@ body{
     display: block;
     animation:loader 2s linear 2s infinite ;
 }
+#output{
+    font-size: 35px;
+}
 @keyframes loader {
     from{
         transform: rotate(0deg);

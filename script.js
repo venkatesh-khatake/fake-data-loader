@@ -3,7 +3,7 @@ const output = document.getElementById('output');
 
 function fakeDataFetch (){
     return new Promise((resolve, reject) =>{
-        let success = true;
+        let success = false;
 
         setTimeout(() =>{
             if(success){
@@ -12,7 +12,7 @@ function fakeDataFetch (){
             else{
                 reject('Data fetch Rejected.')
             }
-        },3000)
+        },5000)
     });
 }
 
