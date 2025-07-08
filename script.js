@@ -3,14 +3,14 @@ const output = document.getElementById('output');
 
 function fakeDataFetch (){
     return new Promise((resolve, reject) =>{
-        let success = false;
+        let success = true;
 
         setTimeout(() =>{
             if(success){
-                resolve('Data fetch successfully.')
+                resolve('Data fetched successfully.')
             }
             else{
-                reject('Data fetch Rejected.')
+                reject('Failed to fetch data.')
             }
         },5000)
     });
